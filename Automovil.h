@@ -4,10 +4,24 @@
 
 #ifndef SEMANA_01_AUTOMOVIL_H
 #define SEMANA_01_AUTOMOVIL_H
+#include <string>
+#include "Vehiculo.h"
+using namespace std;
 
 
-class Automovil {
+class Automovil : protected Vehiculo {
+
+protected:
+
+    string marca;
+    string modelo;
+    int year;
+
+public:
+
+    Automovil();
+    Automovil(string marca, string modelo, int year);
+
 };
 
-
-#endif //SEMANA_01_AUTOMOVIL_H
+#endif
